@@ -1,0 +1,89 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Menghilangkan scroll di halaman */
+  html, body {
+    height: 100%;
+    overflow: hidden; /* Menghilangkan scroll bar */
+  }
+  
+  /* Basic body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #C5D3E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Footer tetap di bawah */
+    min-height: 100vh;
+    align-items: center; /* Menyusun konten secara horisontal di tengah */
+  }
+  
+  /* Header styling dengan background color */
+  header {
+    background-color: #ff5733; /* Warna latar belakang header */
+    color: #fff; /* Teks putih */
+    text-align: center;
+    padding: 40px 0;
+    width: 100%; /* Menggunakan lebar penuh */
+    border-bottom: 4px solid #D0E8C5;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Main container styling untuk konten tengah */
+  .surprise-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Memastikan container mengisi ruang */
+    width: 80%; /* Lebar kontainer */
+    max-width: 600px; /* Maksimal lebar 600px */
+    height: 300px; /* Tinggi tetap untuk kontainer */
+    background-color: #ff9f00; /* Warna latar belakang container */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Memberikan ruang di dalam */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    margin: 50px 0; /* Ruang di atas dan bawah */
+  }
+  
+  /* Teks di dalam container */
+  .surprise-container p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 0; /* Menghapus margin default */
+    background: linear-gradient(135deg, #ff9f00, #ff5733); /* Gradasi warna */
+    -webkit-background-clip: text;
+    color: transparent; /* Menghilangkan warna default */
+  }
+  
+  /* Footer styling dengan background color */
+  footer {
+    background-color: #A6AEBF; /* Warna latar belakang footer */
+    color: #fff; /* Teks footer putih */
+    text-align: center;
+    padding: 15px 0;
+    width: 100%; /* Menggunakan lebar penuh */
+    border-top: 4px solid #D0E8C5;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  footer p:hover {
+    color: #ff5733; /* Warna berubah saat hover */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  

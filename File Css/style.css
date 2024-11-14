@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C5D3E8;
+  }
+  
+  header {
+    background-color: #A6AEBF;
+    color: #D0E8C5;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .slider-container {
+        width: 80%;
+        max-width: 1000px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #A6AEBF; 
+        padding: 10px; 
+      
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 50%;
+    height: auto; /* Menjaga aspek rasio gambar */
+    object-fit: contain; /* Memastikan gambar tetap terjaga dalam wadah dan tidak terdistorsi */
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #D0E8C5;
+  }
+  
+  .text-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-overlay p {
+    font-size: 1.5rem;
+  }
+  
+  .surprise-button {
+    padding: 10px 20px;
+    background-color: #ff9f00;
+    color: #D0E8C5;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  footer {
+    background-color: #D0E8C5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  footer {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  footer:hover {
+    color: #ff5733; /* Warna saat hover */
+    transform: scale(1.1); /* Efek zoom */
+  }
+  
